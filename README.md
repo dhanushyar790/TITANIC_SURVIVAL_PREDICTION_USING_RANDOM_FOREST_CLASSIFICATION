@@ -1,40 +1,86 @@
-🚢 Titanic Survival Prediction
-📖 Overview
-This project predicts passenger survival on the Titanic dataset using Random Forest Classifier. It demonstrates end-to-end data preprocessing, feature engineering, model training, and evaluation with clear visualizations.
+# 🚢 Titanic Survival Prediction
 
-⚙️ Workflow
-Data Cleaning & Imputation
+## 📖 Overview
+This project predicts passenger survival on the Titanic dataset using a Random Forest Classifier.  
+It demonstrates end-to-end machine learning workflow including data preprocessing, feature engineering, model training, evaluation, and visualization.
 
-Missing values handled with SimpleImputer (mean & most_frequent).
+---
 
-Feature Engineering
+# ⚙️ Workflow
 
-Label encoding for categorical variables.
+## 1️⃣ Data Cleaning & Imputation
+- Handled missing values using `SimpleImputer`
+- Used:
+  - `mean` strategy for numerical columns
+  - `most_frequent` strategy for categorical columns
 
-Standard scaling for numerical features.
+---
 
-Outlier treatment using Winsorization.
+## 2️⃣ Feature Engineering
+- Applied Label Encoding for categorical features
+- Used Standard Scaling for numerical columns
+- Performed outlier treatment using Winsorization
 
-Model Training
+---
 
-Random Forest Classifier (entropy, tuned hyperparameters).
+## 3️⃣ Model Training
+Trained a `RandomForestClassifier` with tuned hyperparameters:
 
-Evaluation
+- `criterion = "entropy"`
+- Optimized:
+  - `n_estimators`
+  - `max_depth`
+  - `min_samples_split`
+  - `min_samples_leaf`
 
-Accuracy score, confusion matrix, classification report.
+---
 
-Correlation heatmap & decision tree visualization.
+## 4️⃣ Model Evaluation
+Evaluated the model using:
+- Accuracy Score
+- Confusion Matrix
+- Classification Report
 
-🛠️ Tech Stack
-Python: Pandas, NumPy, Matplotlib, Seaborn
+Generated visualizations:
+- Correlation Heatmap
+- Boxplots
+- Random Forest Decision Tree Visualization
 
-ML: Scikit-learn (Random Forest, preprocessing)
+---
 
-Stats: SciPy (Winsorization)
+# 🛠️ Tech Stack
 
-📊 Results
-Achieved strong classification accuracy.
+## Python Libraries
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
 
-Clear insights into survival correlations.
+## Machine Learning
+- Scikit-learn
+  - Random Forest Classifier
+  - Preprocessing
+  - Metrics
 
-Visualizations: boxplots, heatmaps, decision tree plots.
+## Statistics
+- SciPy (Winsorization)
+
+---
+
+# 📊 Results
+- Achieved strong classification accuracy
+- Identified important survival-related features
+- Built clear visualizations for better model interpretation
+
+---
+
+# 📈 Visualizations Included
+- Boxplots
+- Correlation Heatmap
+- Confusion Matrix
+- Random Forest Tree Plot
+
+---
+
+# 🚀 Conclusion
+This project demonstrates how Random Forest can effectively solve classification problems through proper preprocessing, feature engineering, and hyperparameter tuning.
